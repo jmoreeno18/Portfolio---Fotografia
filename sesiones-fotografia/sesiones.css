@@ -1,0 +1,992 @@
+/* Estilos globales */
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.layout-sesion1, .layout-sesion2, .layout-sesion3, .layout-sesion4, .layout-sesion5, .layout-sesion6-1, .layout-sesion6-2, .layout-sesion6-3, .layout-sesion7-1, .layout-sesion7-2, .layout-sesion7-3, .layout-sesion7-4, .layout-sesion7-5, .layout-sesion7-6, .layout-sesion8-1, .layout-sesion8-2, .layout-sesion8-3, .layout-sesion9 {
+    margin-top: 15px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    width: 95%;
+    margin-bottom: 5rem;
+}
+
+.sesion1__title, .sesion2__title, .sesion3__title, .sesion4__title, .sesion5__title, .sesion6-1__title, .sesion6-2__title, .sesion6-3__title, .sesion7-1__title, .sesion7-2__title, .sesion7-3__title, .sesion7-4__title, .sesion7-5__title, .sesion7-6__title, .sesion8-1__title, .sesion8-2__title, .sesion8-3__title, .sesion9__title{
+    margin: 0 auto;
+    margin-top: 3rem;
+    font-size: 4rem;
+}
+
+.sesion1__article0, .sesion2__article0, .sesion3__article0, .sesion5__article0, .sesion6-1__article0, .sesion6-2__article, .sesion6-3__article, .sesion7-1__article0, .sesion7-2__article0, .sesion7-3__article0, .sesion7-4__article0, .sesion7-5__article0, .sesion7-6__article0, .sesion8-1__article0, .sesion8-2__article0, .sesion8-3__article0, .sesion9__article0{
+    text-align: center;
+}
+.sesion1__text, .sesion2__text, .sesion3__text, .sesion4__text, .sesion5__text, .sesion6-1__text, .sesion6-2__text, .sesion6-3__text, .sesion7-1__text, .sesion7-2__text, .sesion7-3__text, .sesion7-4__text, .sesion7-5__text, .sesion7-6__text, .sesion8-1__text, .sesion8-2__text, .sesion8-3__text, .sesion9__text{
+    text-align: left; /*LEFT O JUSTIFY*/
+    font-size: 1.6rem;
+    width: 80%;
+    margin: 2rem auto;
+    font-family: 'Gotham-Light';
+}
+
+aside{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside__boton {
+    margin: 3rem 5rem;
+    padding: 2px 10px;
+    background-color: white;
+    border: none;
+    cursor: default !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;    
+    
+}
+
+.aside__boton a::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    top: 100%;
+    left: 10%;
+    width: 0%;
+    background-color: black;
+    transition: all .3s ease-in-out;
+}
+
+.aside__boton a {
+    font-size: 1.8rem;
+    font-family: 'Gotham-Light';
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.aside__button--right-sesion1{
+    margin: 3rem;
+    margin-left: auto;
+}
+
+.aside__boton a:hover{
+    opacity: .8;
+}
+
+.w-so{
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.1rem !important;
+}
+
+
+/* Sesion 1 */
+.layout-sesion1{
+    width: 65%;
+}
+
+.sesion1__title{
+    text-align: left;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Arbotek-thin';
+    width: 100%;
+    margin: 3rem auto;
+    margin-bottom: 0;
+    margin-top: 5rem;
+}
+
+.sesion1__text{
+    width: 90%;
+    margin: 1rem 0;
+}
+
+.text__localitation-data{
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.layout-sesion1__section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    overflow-x: hidden;
+}
+
+.sesion1__article {
+    width: 100%;    
+}
+
+.sesion1__photo-1{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%; 
+}
+
+
+.sesion1__photo {
+    max-width: 100%;
+    width: 100%; 
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.sesion1__photo--4, .sesion1__photo--5{
+    width: 100%;
+}
+
+@media(max-width: 640px){
+    aside{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    
+    .aside__boton {
+        margin: 0rem;
+        line-height: 40px;    
+    }
+}
+
+/* Sesion 2 */
+.layout-sesion2{
+    margin-bottom: 0;
+}
+.layout-sesion2__section {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto auto 450px; /*Los 500px hay que cambiarlos para hacerlo responsive*/
+    gap: 15px;
+    overflow-x: hidden; 
+    margin: 1%;
+}
+
+.sesion2__title{
+    font-family: 'Arbotek-light';
+    font-weight: 100;
+    margin-top: 5rem;
+    margin-right: 30%;
+}
+.sesion2__title span {
+    text-align: right; 
+    display: block; 
+    font-family: 'glossy';
+    font-weight: 100;
+    font-size: 5rem;
+    width: 90%;
+}
+.sesion2__text {
+    width: 85%;
+}
+
+.sesion2__article0 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.sesion2__article1 {
+    grid-row: 1 / 2;
+}
+
+.sesion2__article2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.sesion2__article3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.sesion2__article4 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.sesion2__article5 {
+    grid-row: 3 / 4;
+}
+
+.sesion2__article6 {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    transform: translateY(-15%);
+}
+
+.sesion2__article7 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.sesion2__article8 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    transform: translateY(49%);
+}
+
+.sesion2__article9 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    transform: translateY(49%);
+}
+
+.sesion2__article10 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    transform: translateY(47%);
+}
+
+.sesion2__article11 {
+    grid-row: 4 / 5;
+    transform: translateY(47%);
+}
+
+.sesion2__article {
+    width: 100%;
+    height: auto;
+}
+
+.sesion2__photo {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Sesion 3 */
+
+.layout-sesion3{
+    width: 85%;
+}
+
+.layout-sesion3__section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    overflow-x: hidden;
+}
+
+.sesion3__article0{
+    grid-column: 1/4;
+}
+.sesion3__title{
+    text-align: left;
+    transform: scaleX(1);
+    font-family: 'Arbotek-thin';
+    letter-spacing: 0.4rem;
+}
+.sesion3__text{
+    width: 50%;
+    text-align: left;
+    margin: 0;
+    margin-top: 2rem;
+    text-align: justify;
+}
+.sesion3__photo{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+.sesion3__article0{
+    margin-bottom: 2rem;
+}
+
+.layout-sesion3__grid{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* gap: 15px; */
+    overflow-x: hidden;
+}
+
+.sesion3__article7{
+    width: 100%;
+}
+.sesion3__article8{
+    width: 100%;
+}
+
+/* Sesion 4 */
+
+.layout-sesion4__section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    overflow-x: hidden;
+}
+
+.sesion4__article0{
+    width: 100%;
+    grid-column: 1/4;
+}
+.sesion4__text{
+    text-align: center;
+}
+
+.sesion4__article1{
+    grid-column: 1/3;
+}
+
+.sesion4__article9{
+    grid-column: 1/3;
+    transform: translateX(25%);
+}
+
+.sesion4__article, .sesion4__photo{
+    width: 100%;
+}
+
+.sesion4__title{
+    transform: scaleX(1);
+    text-align: center;
+}
+
+/* Sesion 5 */
+
+.sesion5__text{
+    text-align: center;
+}
+.sesion5__title{
+    font-family: 'Gotham-Light';
+    font-weight: lighter;
+}
+
+.text__localitation-data--5{
+    text-align: left;
+}
+
+.layout-sesion5__section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    overflow-x: hidden;
+}
+
+.sesion5__article0{
+    grid-column: 1/4
+}
+
+.sesion5__photo{
+    width: 100%;
+}
+
+/* Sesion 6 -- Home */
+.layout-photo__sesion6-home, .layout-photo__sesion7-home {
+    width: 100%;
+}
+
+.photo__sesion6-home{
+    display: flex;
+    flex-direction: column;
+}
+
+.photo__title__sesion6-home, .photo__title__sesion7-home {
+    font-size: 4.5rem;
+    margin-top: 4.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Misto';
+    font-weight: 100;
+}
+
+.photo__part2__sesion6-home {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    align-items: stretch;
+    gap: 30px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+.photo__name__sesion6-home, .photo__name__sesion7-home {
+    font-family: 'Gotham-Light';
+    font-size: 1.6rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.photo__part2__sesion6-home img {
+    width: 100%;
+    height: 28rem; 
+    object-fit: cover; 
+    box-shadow: 3px 5px 5px rgba(15, 15, 15, .5);
+    cursor: pointer;
+}
+ 
+
+.photo__section__sesion6-home:hover img, .photo__section__sesion7-home:hover img {
+    transition: transform 0.3s ease;
+}
+
+.photo__part2--image__sesion6-home:hover, .photo__part2--image__sesion7-home:hover{
+    transform: scale(1.05)
+}
+
+.photo__part1--image__sesion6-home, .photo__part1--image__sesion7-home{
+    max-width: 100%;
+    height: 75vh;
+    margin-left: 7rem;
+}
+
+/* Sesion 6-1 Belen Aguilera */
+
+.layout-sesion6-1{
+    width: 85%;
+}
+
+.layout-sesion6-1__section {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px; 
+}
+
+.sesion6-1__article0 {
+    grid-column: span 3;
+    width: 100%; 
+    margin: 0 auto;
+}
+
+.sesion6-1__title {
+    font-family: 'Arbotek';
+    text-transform: uppercase;
+}
+
+.sesion6-1__text{
+    width: 70%;
+}
+
+.sesion6-1__article-2f{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    overflow-x: hidden;
+}
+
+.sesion6-1__article-1f{
+    grid-column: 1/4;
+}
+
+.sesion6-1__photo{
+    width: 100%;
+}
+
+/* Sesion 6-2 Israel Fernandez */
+
+.layout-sesion6-2__section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px; 
+}
+
+.sesion6-2__title{
+    font-family: 'Arbotek';
+    text-transform: uppercase;
+}
+
+.sesion6-2__article0{
+    grid-column: 1/4;
+}
+
+.sesion6-2__article1{
+    grid-column: span 2;
+}
+
+.sesion6-2__article2{
+    transform: translateY(10%);
+    grid-row: span 3;
+}
+
+.sesion6-2__article3{
+    grid-column: span 2;
+}
+
+.sesion6-2__article4{
+    grid-column: span 3;
+}
+
+.sesion6-2__article-4f{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    overflow-x: hidden;
+}
+
+.sesion6-2__article10{
+    grid-column: span 1;
+}
+
+.sesion6-2__article11{
+    grid-column: span 3;
+}
+
+.sesion6-2__photo{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Sesion 3 RECYCLED J */
+
+.layout-sesion6-3{
+    width: 80%;
+}
+
+.layout-sesion6-3__section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px; 
+}
+
+.sesion6-3__title{
+    font-family: 'Arbotek';
+}
+
+.sesion6-3__title--first-letter{
+    font-family: 'Sevillana';
+    font-size: 4rem;
+    font-weight: 100;
+    transform: scaleX(2);
+}
+
+.sesion6-3__article0{
+    grid-column: 1/4;
+}
+
+.sesion6-3__article5{
+    grid-column: 2/3;
+    grid-row: auto;
+}
+
+
+.sesion6-3__article7{
+    grid-row: span 2;
+    transform: translateY(15%);
+}
+
+.sesion6-3__article8, .sesion6-3__article9{
+    grid-column: 2/4;
+}
+
+.sesion6-3__article-2f{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    overflow-x: hidden;
+}
+
+.sesion6-3__photo11, .sesion6-3__photo10{
+    height: 100vh;
+}
+
+.sesion6-3__photo{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* SESION 7 -- HOME */
+
+.layout-sesion7-1{
+    margin: 0 auto;
+}
+
+.photo__title__sesion7-home{
+    font-family: 'Arbotek';
+}
+
+.photo__part2__sesion7-home{
+    justify-self: center;
+    width: auto; 
+}
+
+.photo__part1__sesion7-home{
+    grid-column: 1/4;
+}
+
+.photo__part2__sesion7-home {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    gap: 30px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.photo__part2__sesion7-home img {
+    width: 100%;
+    height: 34rem; 
+    object-fit: cover; 
+    box-shadow: 3px 5px 5px rgba(15, 15, 15, .5);
+    cursor: pointer;
+}
+
+/* Sesion 7-1 -- Louis Vuitton */
+
+.layout-sesion7-1{
+    width: 75%;
+    margin-bottom: 5rem;
+}
+
+.layout-sesion7-1__section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.sesion7-1__title, .sesion7-2__title, .sesion7-3__title{
+    font-family: 'Arbotek-thin';
+    text-transform: uppercase;
+}
+
+.sesion7-1__article0{
+    grid-column: 1/3;
+}
+
+.sesion7-1__photo{
+    width: 100%;
+    height: auto;
+}
+
+/* Sesion 7-2 -- Elle Style Awards */
+
+.layout-sesion7-2{
+    width: 75%;
+}
+
+.layout-sesion7-2__section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.sesion7-2__article0{
+    grid-column: 1/3;
+}
+
+.sesion7-2__article-3f{
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sesion7-2__photo{
+    width: 100%;
+    height: auto;
+}
+
+/* Sesion 7-3 -- LONGCHAMP */
+.layout-sesion7-3{
+    width: 75%;
+}
+
+.layout-sesion7-3__section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.sesion7-3__article0{
+    grid-column: 1/4;
+}
+
+.sesion7-3__article1{
+    grid-column: 1/3;
+    grid-row: 2/4;
+}
+.sesion7-3__article7{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+.sesion7-3__article6{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+.sesion7-3__article8{
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.sesion7-3__article9{
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.sesion7-3__photo{
+    width: 100%;
+    height: auto;
+}
+
+.sesion7-3__article1{
+    width: 100%;
+    
+}
+
+.sesion7-3__photo--1{
+    width: 100%;
+}
+.layout-sesion7-3__section--responsive{
+    display: none;
+}
+
+
+/* Sesion 7-4 XMAS LUNCH */
+
+.layout-sesion7-4{
+    width: 75%;
+}
+
+.layout-sesion7-4__section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.sesion7-4__title{
+    font-family: 'Arbotek-thin';
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.sesion7-4__text{
+    margin-left: 0;
+}
+
+.sesion7-4__photo{
+    width: 100%;
+    height: auto;
+}
+
+/* Sesion 7-5 BAZAAR WOMEN */
+
+.layout-sesion7-5{
+    width: 75%;
+}
+
+.layout-sesion7-5__section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.sesion7-5__article0{
+    grid-column: 1/4;
+}
+
+.sesion7-5__title{
+    font-family: 'Arbotek-thin';
+    font-size: 4rem;
+    margin: 2rem auto;
+    text-transform: uppercase;
+}
+
+.sesion7-5__photo{
+    width: 100%;
+    height: auto;
+}
+
+/* Sesion 7-6 FORBES */
+.layout-sesion7-6{
+    width: 75%;
+}
+
+.layout-sesion7-6__section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.sesion7-6__article0{
+    grid-column: 1/4;
+}
+
+.sesion7-6__title{
+    font-family: 'Arbotek-thin';
+    font-size: 5rem;
+    margin: 2rem auto;
+    text-transform: uppercase;
+}
+
+.sesion7-6__article5{
+    grid-column: 2/4;
+    grid-row: span 2;
+}
+
+.sesion7-6__photo{
+    width: 100%;
+    height: auto;
+}
+
+
+/* Sesion 8-1 -- MISS DIOR  */
+
+.layout-sesion8-1{
+    width: 60%;
+}
+
+.layout-sesion8-1__section{
+    margin: 0 auto;
+}
+
+.layout-sesion8-1__section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.sesion8-1__article0{
+    grid-column: 1/3;
+}
+
+.sesion8-1__title{
+    font-family: 'Gotham-light';
+    font-size: 5rem;
+    margin: 3.5rem auto;    
+}
+
+.sesion8-1__photo{
+    width: 100%;
+    height: auto;
+}
+
+/* Sesion 8-2 -- Nespresso */
+.layout-sesion8-2{
+    width: 65%;
+    margin-bottom: 0;
+}
+.layout-sesion8-2__section{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+.layout-sesion8-2__section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.sesion8-2__article0{
+    grid-column: 1/3;
+}
+
+.sesion8-2__title{
+    font-family: 'Gotham-light';
+    font-size: 5rem;
+    margin: 3.5rem auto;    
+}
+
+.sesion8-2__photo{
+    width: 100%;
+    height: auto;
+}
+
+.sesion8-2__article2, .sesion8-2__article3, .sesion8-2__article6{
+    width: 70%;
+}
+
+.sesion8-2__article2{
+    margin: auto 0;
+}
+
+.sesion8-2__article3{
+    margin: 0;
+    transform: translateX(43%);
+}
+
+.sesion8-2__article4{
+    transform: translateY(-15%);
+}
+
+.sesion8-2__article5{
+    transform: translateY(-30%);
+}
+
+.sesion8-2__article6{
+    transform: translateY(-15%);
+}
+
+/* Sesion 8-3 */
+.sesion8-3__title--3{
+    font-size: 4rem;
+}
+
+/* SESION 9 -- La culpa */
+.layout-sesion9{
+    width: 70%;
+}
+
+.layout-sesion9__section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.sesion9__article0{
+    grid-column: 1/3;
+    margin: auto;
+}
+
+.sesion9__title{
+    font-family: 'Gotham-light';
+    font-size: 5rem;
+    margin: 3.5rem auto;    
+}
+
+.sesion9__photo{
+    width: 100%;
+    height: auto;
+}
+
+.sesion9__grid{
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+.sesion9__article8{
+    grid-row: span 2;
+    margin-top: 6.5rem;
+}
+
+
+
+/* Scroll */
+/* Estilo para el contenedor del scrollbar */
+::-webkit-scrollbar {
+    width: 13px;  /* Ancho del scroll */
+    height: 8px; /* Alto del scroll si es horizontal */
+}
+
+/* Estilo para el "track" (el fondo del scrollbar) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color de fondo del scroll */
+    border-radius: 10px;  /* Bordes redondeados */
+    margin: 0.5rem;
+}
+
+/* Estilo para el "thumb" (la parte que se desplaza) */
+::-webkit-scrollbar-thumb {
+    background-color: #91afdf; /* Color del thumb */
+    border-radius: 10px;     /* Bordes redondeados */
+    border: 2px solid #f1f1f1; /* Borde alrededor del thumb para separarlo del track */
+}
+
+/* Cambia el color del thumb cuando esté en uso */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #4879c8; /* Color cuando el usuario interactúa con él */
+}
+
+s {
+    text-decoration: line-through;
+    text-decoration-thickness: 2.5px;
+    text-decoration-color: rgb(0, 0, 0); 
+}

@@ -1,0 +1,292 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.layout__front-page {
+    display: grid;
+    grid-template-columns: 15% 15% 35% 28% 15%;
+    grid-template-rows: 50% 50%;
+    gap: 1rem;
+    width: 100%;
+    height: 100vh;
+    margin: 0 2.8rem;
+}
+
+.front-page__images img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 3px 5px rgba(15, 15, 15, .5);
+    border-radius: 5px;
+}
+
+/* Default positions */
+.front-page__images{
+    position: relative;
+    height: 100vh;
+}
+ .front-page__images--image1 {
+    width: 100%;
+    top: 40%;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.front-page__images--image2 {
+    width: 100%;
+    top: 6%;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
+.front-page__images--image3 {
+    width: 100%;
+    top: 60%;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.front-page__images--image4 {
+    width: 100%;
+    top: 20%;
+    grid-column: 4;
+    grid-row: 1;
+    
+}
+
+.front-page__images--image5 {
+    width: 47%;
+    grid-column: 4;
+    grid-row: 2;
+    bottom: 14%;
+}
+
+.front-page__images--image6 {
+    width: 85%;
+    grid-column: 5;
+    grid-row: 2;
+    right: 99%;
+} 
+
+.title__name {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 8rem;
+    font-weight: lighter;
+    font-family: 'Arbotek-thin';
+}
+
+.title__text{
+    font-size: 1.8rem;
+    bottom: 3%;
+    line-height: 1.1;
+    font-weight:500;
+}
+
+.title__name--responsive{
+    display: none;    
+    font-size: 10rem;
+    font-weight: lighter;
+    font-family: 'Arbotek-thin';
+}
+
+
+/* 2 SECCIÓN */
+
+.four-sections {
+    width: 100%;
+    height: 100%;
+    padding-top: 10rem;
+    margin-bottom: 10rem;
+    display: flex;
+    gap: .7rem;
+}
+
+.four-sections__images {
+    width: 100%;
+    height: auto;
+}
+
+.four-sections__images img{
+    margin: auto;
+}
+.photo__part1 {
+    position: relative;
+    text-align: center;
+}
+
+.photo__title--big {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+    font-family: 'Arbotek-thin';
+    background-color: rgba(0, 0, 0, 0.05);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.four-sections__images--title {
+    cursor: pointer;
+    text-align: center;
+    font-size: 2.4rem;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    font-family: 'Arbotek-thin';
+}
+
+.four-sections__images--image-1 {
+    cursor: pointer;
+    position: relative;
+    bottom: 7rem;
+}
+
+.four-sections__images--image-2 {
+    cursor: pointer;
+    position: relative;   
+}
+
+.four-sections__images--image-4 {
+    cursor: pointer;
+    position: relative;
+    bottom: -7rem;
+}
+.four-sections__link{
+    cursor: pointer;
+}
+
+.four-sections--responsive{
+    display: none;
+}
+
+/* FOTOGRAFIA */
+.layout-photo{
+    width: 95vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.photo__section1 img {
+    height: 375px;
+    object-fit: contain;
+}
+
+.photo__part1--image {
+    margin-top: 1rem;
+    width: 100%;
+    height: 50%;
+}
+
+.photo{
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-responsive{
+    display: none;
+}
+
+.photo__part1 {
+    display: grid;
+    grid-template-columns: 50% 60%;
+    grid-template-rows: 100%;
+    height: 70vh;
+    margin-top: 2rem;
+}
+
+.photo__section1 picture {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-top: 1.5rem;    
+    margin-bottom: 2rem;
+}
+
+.photo__section1 img {
+    width: 100%;
+    height: 30rem;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.photo__section1 p {
+    text-align: center;
+    font-size: 1.8rem;
+    position: relative;
+    top: 1.5rem;
+}
+
+.photo__title {
+    font-size: 4.3rem;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: 'Misto';
+    font-weight: lighter;
+}
+
+.photo__part2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+    align-items: stretch;
+    gap: 7px;
+    margin: 1rem;
+    margin-top: 1.1rem;
+    
+}
+.photo__number{
+    font-family: 'Gotham-Light';
+}
+
+.photo__part2 img {
+    width: 100%;
+    height: 14rem; 
+    object-fit: cover; 
+    box-shadow: 3px 5px 5px rgba(15, 15, 15, .5);
+    cursor: pointer;
+}
+.photo__part2 p{
+    font-size: 1.2rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.photo__section.hover img {
+    transition: transform 0.3s ease;
+}
+.photo__part2--image:hover{
+    transform: scale(1.1)
+}
+
+/* Scroll */
+/* Estilo para el contenedor del scrollbar */
+::-webkit-scrollbar {
+    width: 13px;  /* Ancho del scroll */
+    height: 8px; /* Alto del scroll si es horizontal */
+}
+
+/* Estilo para el "track" (el fondo del scrollbar) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color de fondo del scroll */
+    border-radius: 10px;  /* Bordes redondeados */
+    margin: 0.5rem;
+}
+
+/* Estilo para el "thumb" (la parte que se desplaza) */
+::-webkit-scrollbar-thumb {
+    background-color: #91afdf; /* Color del thumb */
+    border-radius: 10px;     /* Bordes redondeados */
+    border: 2px solid #f1f1f1; /* Borde alrededor del thumb para separarlo del track */
+}
+
+/* Cambia el color del thumb cuando esté en uso */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #4879c8; /* Color cuando el usuario interactúa con él */
+}

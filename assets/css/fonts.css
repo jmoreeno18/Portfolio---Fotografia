@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Arbotek';
+    src: url('/assets/fonts/Arbotek/Arbotek-LightRounded.otf') format('opentype'),
+         url('/assets/fonts/Arbotek/Arbotek-LightRounded.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arbotek-light';
+    src: url('/assets/fonts/Arbotek/Arbotek-Light.otf') format('opentype'),
+         url('/assets/fonts/Arbotek/Arbotek-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Arbotek-thin';
+    src: url('/assets/fonts/Arbotek/Arbotek-Thin.otf') format('opentype'),
+         url('/assets/fonts/Arbotek/Arbotek-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glossy';
+    src: url('/assets/fonts/glossy.otf') format('opentype'),
+         url('/assets/fonts/glossy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url('/assets/fonts/Gotham-Light.otf') format('opentype'),
+         url('/assets/fonts/Gotham-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Misto';
+    src: url('/assets/fonts/Misto.otf') format('opentype'),
+         url('/assets/fonts/Misto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sevillana';
+    src: url('/assets/fonts/Sevillana/Sevillana-Regular.otf') format('opentype'),
+         url('/assets/fonts/Sevillana/Sevillana-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Degular';
+    src: url('/assets/fonts/fonnts.com-DegularDisplayDemo-Thin.otf'),
+         url('/assets/fonts/fonnts.com-DegularDisplayDemo-Thin.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
